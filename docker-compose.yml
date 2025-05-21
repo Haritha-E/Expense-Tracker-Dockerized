@@ -27,7 +27,7 @@ version: '3.8'
 
 services:
   backend:
-    image: harithaeswaran/backend:latest
+    image: harithaeswaran/expense-tracker-backend:latest
     ports:
       - "5000:5000"
     env_file:
@@ -35,7 +35,7 @@ services:
     restart: always
 
   frontend:
-    image: harithaeswaran/frontend:latest
+    image: harithaeswaran/expense-tracker-frontend:latest
     ports:
       - "3000:3000"
     depends_on:
